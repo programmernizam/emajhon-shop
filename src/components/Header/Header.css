@@ -1,0 +1,19 @@
+.header{
+    background-color: #1C2B35;
+}
+.navbar-nav .nav-item .nav-link{
+    position: relative;
+}
+.navbar-nav .nav-item .nav-link::after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 4px;
+    left: 0;
+    bottom: -10px;
+    background-color: orange;
+    transition: 1s;
+}
+.navbar-nav .nav-item .nav-link:hover::after{
+    width: 100%;
+}
